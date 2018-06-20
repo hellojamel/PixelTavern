@@ -1,0 +1,343 @@
+/***************************************************
+			      Clearfix
+***************************************************/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/***************************************************
+			      Global
+***************************************************/
+
+/* 
+Colour Palette:
+
+Primary: #3D475C
+Accent: #73AFE6
+Body Text: #2B2F33
+Background-Primary: #E3EBF7
+Background-Seconday: #FFFFFF ;
+
+ */
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 112.5%; /* 18px */
+	height: 100%;	
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	line-height: 1.3;
+
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+
+}
+
+
+img {
+	display: inline-block;
+	border: 0;
+	max-width: 100%;
+}
+
+.container {
+	position: relative;
+	padding: 1.277777777777778rem 1.166666666666667rem 1.277777777777778rem 1.277777777777778rem;
+}
+
+img[alt="Pixel Tavern Mobile Logo"] {
+	height: 0.6111111111111111rem;
+	margin-left: 1.277777777777778rem;
+	width:  1.222222222222222rem;
+}
+
+section:nth-child(1), section:first-of-type {
+	background-color: #EDF1F7;
+}
+
+/* iOS hack to disable rounded corner inputs*/
+textarea, 
+input[type="text"],
+input[type="button"],
+input[type="email"],
+input[type="submit"] {
+	-webkit-appearance: none; border-radius: 0;
+}
+/***************************************************
+			      Typography
+***************************************************/
+
+h1, h2, h3, p {
+	color: #3D475C;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-family: "Tungsten A", "Tungsten B"; 
+	font-size: 1.611111111111111em;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.275862068965517;
+}
+
+p {
+	color: #2B2F33;
+	font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B";
+	font-style: normal;
+	font-weight: 400;
+}
+
+h1 {
+	float: left;
+	font-family: "Tungsten A", "Tungsten B";
+	font-size: 2.666666666666667em;
+	font-style: normal;
+	font-weight: 600;
+	letter-spacing: -0.026rem;
+	line-height: 1.208333333333333;
+	margin-top: 2rem;
+	padding-right: 1.111111111111111rem;
+	text-transform: uppercase;
+	vertical-align: text-bottom;
+}
+
+.banner h2 {
+	float: left;
+	margin-top: 2rem;
+	max-width: 7.944444444444444rem;
+}
+
+section h3 {
+	font-family: "Tungsten A", "Tungsten B";
+	font-size: 1.611111111111111em;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.206896551724138;
+	text-align: center;
+	margin-bottom: 1.277777777777778rem;
+
+}
+
+footer {
+	font-size: 0.6111111111111111rem;
+	line-height: 1.454545454545455;
+	text-align: center;
+	text-transform: lowercase;
+
+}
+
+button {
+	font-size: 0.6111111111111111rem;
+	line-height: 1.454545454545455;
+	text-align: center;
+}
+
+/***************************************************
+			      Navigation
+***************************************************/
+
+nav {
+	background-color: #3D475C;
+	height: 2.555555555555556rem;
+	line-height: 0;
+	padding-top: 0.9444444444444444rem;
+	position: relative;
+	max-width: 100%;
+}
+
+nav ul {
+	display: none;
+}
+
+.nav-toggle {
+	background: transparent;
+	line-height: inherit;
+    border: none;
+	color: #73AFE6;
+    font-size: 1rem;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 1.277777777777778rem;
+    bottom: 0
+}
+
+/***************************************************
+			      Header
+***************************************************/
+
+/*h1::after {
+content: "|";
+float: right;
+color: #000;
+width: 2px;
+height: 80px;
+}*/
+
+.banner {
+	background-image: url('../imgs/header-preview-cropped.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-bottom: 1.277777777777778rem;
+}
+
+header .container {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/***************************************************
+			      Projects
+***************************************************/
+
+.projects img {
+	display: block;
+	border: 1px solid #000;
+	width: 100%;
+	height: 11.83333333333333rem;
+}
+
+.projects h3 {
+	margin-bottom: 1.277777777777778rem;
+}
+
+.project-banner img {
+	display: block;
+	margin: 0 auto;
+}
+
+
+/***************************************************
+			      Skills
+***************************************************/
+.icon {
+    display: inline-block;
+    margin: 1.22222222227rem 1.22222222227rem 1.22222222227rem 0;
+    width: 1.277777777777778rem;
+    height: 1.277777777777778rem;
+}
+
+.icon:last-of-type {
+	margin-right: 0;
+}
+
+/***************************************************
+			      About Us
+***************************************************/
+
+img[alt~="Profile"] {
+	display: block;
+	border-radius: 50%;
+	max-width: 7.666666666666667rem ;
+	max-height: 7.666666666666667rem;
+	margin: 0 auto;
+}
+
+img[alt~="Profile"] + h3 {
+	padding-top: 1.277777777777778rem;
+}
+
+
+/***************************************************
+			      Contact Us
+***************************************************/
+
+.form-header h2 {
+	font-size: 2.666666666666667em;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 1.277777777777778rem;
+}
+
+.form-header p {
+	margin-bottom:;
+}
+
+#email-form p {
+	margin-bottom: 1.277777777777778rem;
+}
+
+input {
+	width: 100%;
+	min-height: 2.555555555555556rem;
+	border: 2px solid #3D475C;
+	padding-left: 0.7222222222222222rem;
+}
+
+button[type="submit"] {
+	background-color: #3D475C;
+	color: #73AFE6;
+	border: 0;
+	padding: 0.2777777777777778rem 1.277777777777778rem 0.2777777777777778rem 1.277777777777778rem;
+	width: 4.277777777777778rem;
+	float: right;
+
+}
+
+::placeholder {
+    color: #466380;
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: #466380;
+}
+
+::-ms-input-placeholder {
+    color: #466380;
+}
+
+textarea {
+	width: 100%;
+	border: 2px solid #3D475C;
+	padding-left: 0.7222222222222222rem;
+	padding-top: 0.7222222222222222rem;
+}
+
+
+
+/***************************************************
+			      Footer
+***************************************************/
+
+/*Sticky footer*/
+
+main {
+  min-height: calc(100vh - 4.222222222222111rem);
+}
+
+ 
+
+footer {
+	background-color: #3D475C;
+	border: 1px solid #000;
+	height: 3.111111111111111rem;
+	width: 100%;
+	padding: 0.5rem 0;
+}
+
+.footer-content p {
+	color: #73AFE6;
+}
+
+/***************************************************
+			      Media Queries
+***************************************************/
+
+
+
